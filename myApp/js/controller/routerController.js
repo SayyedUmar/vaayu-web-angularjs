@@ -21,7 +21,7 @@ angular.module('app').controller('routeCtrl', function ($scope, $http, $state, M
   FinalizeService, RouteStaticResponse, ToasterService, SessionService) {
 
   $scope.place = {};
-  // Map.init();
+  Map.init();
 
   $scope.initMap = function () {
 
@@ -62,7 +62,7 @@ angular.module('app').controller('routeCtrl', function ($scope, $http, $state, M
 
     ];
     // calculateAndDisplayRoute(directionsRenderer, directionsService, $scope.markerArray, waypts, stepDisplay, map);    // Define a symbol using SVG path notation, with an opacity of 1.
-    // calculateAndDisplayRoute( directionsService, directionsRenderer, waypts)
+    calculateAndDisplayRoute( directionsService, directionsRenderer, waypts)
 
   }
 
